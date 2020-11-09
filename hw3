@@ -1,0 +1,7 @@
+print(r' \a', '\t', 'Bell (alert)' '\n',
+      r'\b', '\t', 'Backspace' '\n',
+      r'\n', '\t', 'Newline' '\n',
+      r'\t', '\t', 'Horizontal tab' '\n'
+      r' \\', '\t', 'Backslash',  '\n'
+      r' \"',   '\t', 'Double quotation mark' '\n'
+      r' \''  , '\t', 'Single quotation mark')
