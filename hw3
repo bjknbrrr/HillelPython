@@ -1,7 +1,7 @@
 print(r' \a', '\t', 'Bell (alert)' '\n',
-      r'\b', '\t', 'Backspace' '\n',
-      r'\n', '\t', 'Newline' '\n',
-      r'\t', '\t', 'Horizontal tab' '\n'
-      r' \\', '\t', 'Backslash',  r'\'', '\n',
-      r'\"',   '\t', 'Double quotation mark', r'"', '\n'
-      r' \''  , '\t', 'Single quotation mark', r"'")
+      '\\b', '\t', 'Backspace' '\n',
+      '\\n', '\t', 'Newline' '\n',
+      '\\t', '\t', 'Horizontal tab' '\n',
+      "\\\ ", '\t',  'Backslash ' '\\' '\n',
+      '\\"', '\t',  'Double quotation mark ' '\"' '\n',
+      "\\'", '\t', 'Single quotation mark ' '\'')
