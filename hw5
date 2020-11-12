@@ -1,0 +1,9 @@
+classA = int(input('How many students are in class A?:'))
+classB = int(input('How many students are in class B?:'))
+classC = int(input('How many students are in class C?:'))
+tables_A = classA//2 + classA%2
+tables_B = classB//2 + classB%2
+tables_C = classC//2 + classC%2
+print('We need to buy', tables_A, 'tables for class A\n',
+      'We need to buy', tables_B, 'tables for class B\n',
+      'We need to buy', tables_C, 'tables for class C')
