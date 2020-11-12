@@ -1,0 +1,5 @@
+students = int(input('How many students:'))
+apples = int(input('How many apples:'))
+a = apples // students
+b = apples % students
+print('Each student will get', a, 'apples.\n', 'There will be', b, 'apples left in the basket')
