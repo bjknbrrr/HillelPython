@@ -1,0 +1,7 @@
+string1 = str(input('Please, enter a string: '))
+#string1 = str('gghaha osihlsah:')
+string2 = string1.replace('h', 'H')
+string3 = string2.replace('H', 'h', 1)
+string4 = string3[::-1].replace('H', 'h', 1)
+print(string4[::-1])
+
