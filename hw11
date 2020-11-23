@@ -24,91 +24,121 @@ for i in range(rows):
   *                           *   
 * * * * * * * * * * * * * * * * * 
 -----------------------------------------------------------------------------------------
-#3.2 обратный треугольник
 
+#2 закрашеный треугольник
 
-rows = int(input('Please, enter a number: '))
+h = int(input('Please enter height: '))  # 5
+i = 0
+while i < h:
+    j = 0
+    while j < h * 2:
+        if h - 1 - i <= j <= h - 1 + i:
+            print('* ', end='')
+        else:
+            print('  ', end='')
+        j += 1
+    print()
+    i += 1
+print()
+
+                *                   
+              * * *                 
+            * * * * *               
+          * * * * * * *             
+        * * * * * * * * *           
+      * * * * * * * * * * *         
+    * * * * * * * * * * * * *       
+  * * * * * * * * * * * * * * *     
+* * * * * * * * * * * * * * * * *   
+-------------------------------------------------------------------------------------------
+
+#3 ромб
+    
+rows = int(input('Please enter height: '))  # 5
 cols = rows * 2 - 1
-for i in range(rows):
-    for j in range(cols):
-        if (i == j
-        or i == (rows)//rows-1
-        or j == cols - 1 - i
-
+i = 0
+while i < rows:
+    j = 0
+    while j < rows * 2:
+        if rows - 1 - i <= j <= rows - 1 + i:
+            print('* ', end='')
+        else:
+            print('  ', end='')
+        j += 1
+    print()
+    i += 1
+for i in range(rows-1):
+    for j in range(cols-1):
+        if (i == j - 1
+            or j == cols -2 - i
     ):
             print('* ', end='')
         else:
             print('  ', end='')
-    print()
-    
-    
-* * * * * * * * * * * * * * * * * 
-  *                           *   
-    *                       *     
-      *                   *       
-        *               *         
-          *           *           
-            *       *             
-              *   *               
-                *         
------------------------------------------------------------------------------------------    
-    #4 ромб
-    
-rows = int(input('Please, enter a number: '))
-cols = rows
-for i in range(rows):
-    for j in range(cols):
-        if (i == rows //2
-            or j == (cols - 1) // 2 - i
-            or j == (cols - 1) // 2 + i
-            or i == (rows - 1) // 2 + j
-            or j == (cols - 1) // 2 - i + rows-1
 
-    ):
-            print('* ', end='')
-        else:
-            print('  ', end='')
     print()
+print()
     
-    
-    Please, enter a number: 9
-    
-        *         
-      *   *       
-    *       *     
-  *           *   
-* * * * * * * * * 
-  *           *   
-    *       *     
-      *   *       
-        *        
+                *                   
+              * * *                 
+            * * * * *               
+          * * * * * * *             
+        * * * * * * * * *           
+      * * * * * * * * * * *         
+    * * * * * * * * * * * * *       
+  * * * * * * * * * * * * * * *     
+* * * * * * * * * * * * * * * * *   
+  *                           * 
+    *                       *   
+      *                   *     
+        *               *       
+          *           *         
+            *       *           
+              *   *             
+                *               
 --------------------------------------------------------------------------------
 
-    #5 ромб + вертикаль
+#4 ромб + вертикаль
     
-rows = int(input('Please, enter a number: '))
-cols = rows
-for i in range(rows):
-    for j in range(cols):
-        if (i == rows //2
+rows = int(input('Please enter height: '))  # 5
+cols = rows * 2 - 1
+i = 0
+while i < rows:
+    j = 0
+    while j < rows * 2:
+        if rows - 1 - i <= j <= rows - 1 + i:
+            print('* ', end='')
+        else:
+            print('  ', end='')
+        j += 1
+    print()
+    i += 1
+for i in range(rows-1):
+    for j in range(cols-1):
+        if (i == j - 1
+            or j == cols -2 - i
             or j == (cols - 1) // 2
-            or j == (cols - 1) // 2 - i
-            or j == (cols - 1) // 2 + i
-            or i == (rows - 1) // 2 + j
-            or j == (cols - 1) // 2 - i + rows-1
-
     ):
             print('* ', end='')
         else:
             print('  ', end='')
+
     print()
-    
-        *         
-      * * *       
-    *   *   *     
-  *     *     *   
-* * * * * * * * * 
-  *     *     *   
-    *   *   *     
-      * * *       
-        *         
+print()
+                *                   
+              * * *                 
+            * * * * *               
+          * * * * * * *             
+        * * * * * * * * *           
+      * * * * * * * * * * *         
+    * * * * * * * * * * * * *       
+  * * * * * * * * * * * * * * *     
+* * * * * * * * * * * * * * * * *   
+  *             *             * 
+    *           *           *   
+      *         *         *     
+        *       *       *       
+          *     *     *         
+            *   *   *           
+              * * *             
+                *            
