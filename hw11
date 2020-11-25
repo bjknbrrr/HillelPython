@@ -57,7 +57,7 @@ print()
 rows = int(input('Please enter height: '))  # 5
 cols = rows * 2 - 1
 i = 0
-while i < rows:
+while i <= rows//2:
     j = 0
     while j < rows * 2:
         if rows - 1 - i <= j <= rows - 1 + i:
@@ -67,10 +67,12 @@ while i < rows:
         j += 1
     print()
     i += 1
-for i in range(rows-1):
+
+
+for i in range((rows-1)//2):
     for j in range(cols-1):
-        if (i == j - 1
-            or j == cols -2 - i
+        if (i == j-(rows+1)//2
+            or j == cols - i - ((rows-1)//2 + 2)
     ):
             print('* ', end='')
         else:
@@ -78,24 +80,16 @@ for i in range(rows-1):
 
     print()
 print()
-    
+
                 *                   
               * * *                 
             * * * * *               
           * * * * * * *             
         * * * * * * * * *           
-      * * * * * * * * * * *         
-    * * * * * * * * * * * * *       
-  * * * * * * * * * * * * * * *     
-* * * * * * * * * * * * * * * * *   
-  *                           * 
-    *                       *   
-      *                   *     
-        *               *       
           *           *         
             *       *           
               *   *             
-                *               
+                *     
 --------------------------------------------------------------------------------
 
 #4 ромб + вертикаль
@@ -103,7 +97,7 @@ print()
 rows = int(input('Please enter height: '))  # 5
 cols = rows * 2 - 1
 i = 0
-while i < rows:
+while i <= rows//2:
     j = 0
     while j < rows * 2:
         if rows - 1 - i <= j <= rows - 1 + i:
@@ -113,10 +107,12 @@ while i < rows:
         j += 1
     print()
     i += 1
-for i in range(rows-1):
+
+
+for i in range((rows-1)//2):
     for j in range(cols-1):
-        if (i == j - 1
-            or j == cols -2 - i
+        if (i == j-(rows+1)//2
+            or j == cols - i - ((rows-1)//2 + 2)
             or j == (cols - 1) // 2
     ):
             print('* ', end='')
@@ -130,15 +126,8 @@ print()
             * * * * *               
           * * * * * * *             
         * * * * * * * * *           
-      * * * * * * * * * * *         
-    * * * * * * * * * * * * *       
-  * * * * * * * * * * * * * * *     
-* * * * * * * * * * * * * * * * *   
-  *             *             * 
-    *           *           *   
-      *         *         *     
-        *       *       *       
           *     *     *         
             *   *   *           
               * * *             
-                *            
+                *               
+
