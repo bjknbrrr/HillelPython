@@ -1,0 +1,14 @@
+import random
+lst1 = []
+for _ in range(20):
+    lst1.append(random.randint(1, 15))
+print(lst1)
+
+k = int(input('please, enter k: '))
+C = int(input('please, enter c: '))
+
+lst1.append(0)
+for i in range(len(lst1) - 1, k, -1):
+    lst1[i] = lst1[i - 1]
+lst1[k] = C
+print(' '.join([str(i) for i in lst1]))
