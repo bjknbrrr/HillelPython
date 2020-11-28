@@ -1,0 +1,16 @@
+a = int(input('Please, enter a:'))
+b = int(input('Please, enter b:'))
+operation = (input('Please, enter operation:'))
+def arithmetic(a, b, operation):
+
+    if operation == '+':
+        return a + b
+    if operation == '-':
+        return a - b
+    if operation == '*':
+        return a * b
+    if  operation == "/":
+        return a / b
+
+res = arithmetic(a, b, operation)
+print(res)
