@@ -1,0 +1,20 @@
+
+num_str = int(input('Enter the number of strings: '))
+lst = []
+for k in range(num_str):
+    a = input('Enter the string: ')
+    lst += a.split()
+dictionary = dict()
+max_value = 0
+result = ''
+for i in lst:
+    if i in dictionary:
+        dictionary[i] += 1
+    else:
+        dictionary[i] = 1
+for i in dictionary:
+    if dictionary[i] >= max_value:
+        max_value = dictionary[i]
+        result = i
+
+print(result)
