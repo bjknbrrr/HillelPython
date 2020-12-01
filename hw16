@@ -1,0 +1,7 @@
+a = 'A Long Time Ago In A Galaxy Far Far Away'
+word = a.split()
+result = {}
+for i in word:
+  counter = word.count(i)
+  result[i] = counter
+print(result)
