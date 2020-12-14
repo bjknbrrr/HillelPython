@@ -1,0 +1,10 @@
+def fun(number, discharge, direction):
+    if direction == False:
+        return number - discharge
+    else:
+        return number + discharge
+number = int(input("Enter a number: "))
+discharge = int(input("Enter a discharge: "))
+direction = bool(input("Enter a direction: "))
+
+print(fun(number, discharge, direction))
