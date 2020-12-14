@@ -1,0 +1,15 @@
+import random
+#lst = [random.randint(10, 20) for _ in range(10)]
+#print(lst)
+#k = int(input('Please, enter k:'))
+#k_value = lst.pop(k)
+#print(lst)
+
+lst = str([random.randint(10, 20) for _ in range(10)]).split()
+print(lst)
+k = int(input('Please, enter k:'))
+for i in range(k, len(lst) - 1):
+    lst[i] = lst[i + 1]
+lst.pop()
+#print(lst)
+print(' '.join(lst))
