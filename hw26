@@ -1,0 +1,9 @@
+d = {
+   'apple': ['malum', 'pomum', 'popula'],
+   'fruit': ['baca', 'bacca', 'popum'],
+   'punishment': ['malum', 'multa']
+}
+
+for key, value in d.items():
+    key, value = value, key
+    print(key, ':', value)
