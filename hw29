@@ -1,0 +1,21 @@
+from random import randint
+
+strings = int(input('Количество строк: '))
+tables = int(input('Количество столбцов: '))
+matrix = [[randint(10, 99) for j in range(tables)] for i in range(strings)]
+
+
+suma = 0
+suma1 = [0] * tables
+
+
+for i in range(strings):
+    for j in range(tables):
+        print(matrix[i][j], end=' ')
+        suma += matrix[i][j]
+        suma1[j] += matrix[i][j]
+    print('=', suma)
+print('=  ' * tables)
+
+for i in range(len(suma1)):
+    print(' ' * (3 - len(str(suma1[i]))) + str(suma1[i]) + ' ', end='')
