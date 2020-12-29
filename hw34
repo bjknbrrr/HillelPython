@@ -1,0 +1,22 @@
+class Buffer:
+    def __init__(self):
+        self.nums = []
+
+    def summa(self, *a):
+        self.nums += a
+        while len(self.nums) >= 5:
+            print(sum(self.nums[:5]))
+            self.nums = self.nums[5:]
+
+    def partly(self):
+        return self.nums
+
+buffer = Buffer()
+buffer.summa(5, 4, 3)
+buffer.partly()
+buffer.summa(4, 6)
+buffer.partly()
+buffer.summa(2, 7, 9, 10, 5, 8)
+buffer.partly()
+buffer.summa(3, 6, 7, 4, 1, 3)
+buffer.partly()
